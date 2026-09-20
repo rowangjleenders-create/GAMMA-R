@@ -2,7 +2,10 @@ import React, { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import {
   View, Text, SectionList, TextInput, StyleSheet, Switch, TouchableOpacity, Alert,
 } from 'react-native';
-import { api, getBaseUrl, setBaseUrl, getOwnerSecret, setOwnerSecret, isLocalApiHost } from '../api/client';
+import {
+  api, getBaseUrl, setBaseUrl, getLocalBaseUrl, getOwnerSecret, setOwnerSecret, isLocalApiHost,
+  getRemoteAccessEnabled, setRemoteAccessEnabled, getRemoteApiUrl, setRemoteApiUrl,
+} from '../api/client';
 import { colors, space, radius, type } from '../theme/tokens';
 import {
   clearAlpacaKeys, isLiveUnlocked, loadAlpacaKeys, saveAlpacaKeys, setLiveUnlocked,
@@ -22,6 +25,8 @@ type Row =
   | { id: string; kind: 'text'; key: string; placeholder?: string; secure?: boolean; autoCap?: 'none' | 'characters' }
   | { id: string; kind: 'baseUrl' }
   | { id: string; kind: 'ownerSecret' }
+  | { id: string; kind: 'remoteToggle' }
+  | { id: string; kind: 'remoteUrl' }
   | { id: string; kind: 'paperMode' }
   | { id: string; kind: 'sip' }
   | { id: string; kind: 'installUrl' }
@@ -52,6 +57,9 @@ export function SettingsScreen() {
   const [healthHint, setHealthHint] = useState<string | null>(null);
   const [apiSecured, setApiSecured] = useState<'yes' | 'no' | 'unknown'>('unknown');
   const [remoteNoSecretWarn, setRemoteNoSecretWarn] = useState(false);
+  const [remoteEnabled, setRemoteEnabled] = useState(false);
+  const [remoteUrl, setRemoteUrl] = useState('');
+  const [remoteStatusHint, setRemoteStatusHint] = useState<string | null>(null);
   const [autoStatus, setAutoStatus] = useState<any>(null);
   const [packs, setPacks] = useState<any[]>([]);
   const [coverage, setCoverage] = useState<any | null>(null);
@@ -61,11 +69,16 @@ export function SettingsScreen() {
 
   useEffect(() => {
     (async () => {
-      const b = await getBaseUrl();
-      setBase(b);
+      const local = await getLocalBaseUrl();
+      setBase(local);
+      const remOn = await getRemoteAccessEnabled();
+      const remUrl = await getRemoteApiUrl();
+      setRemoteEnabled(remOn);
+      setRemoteUrl(remUrl);
+      const effective = await getBaseUrl();
       const sec = await getOwnerSecret();
       setOwnerSecretState(sec);
-      setRemoteNoSecretWarn(!isLocalApiHost(b) && !sec);
+      setRemoteNoSecretWarn(!isLocalApiHost(effective) && !sec);
       const savedInstall = await AsyncStorage.getItem(INSTALL_URL_KEY);
       if (savedInstall) setInstallPageUrl(savedInstall);
       try {
@@ -123,8 +136,14 @@ export function SettingsScreen() {
   const save = useCallback(async () => {
     try {
       await setBaseUrl(base);
+      await setRemoteAccessEnabled(remoteEnabled);
+      await setRemoteApiUrl(remoteUrl);
       await setOwnerSecret(ownerSecret);
-      setRemoteNoSecretWarn(!isLocalApiHost(base) && !(ownerSecret || '').trim());
+      const effective = remoteEnabled && remoteUrl.trim() ? remoteUrl.trim().replace(/\/$/, '') : base;
+      setRemoteNoSecretWarn(!isLocalApiHost(effective) && !(ownerSecret || '').trim());
+      if (remoteEnabled && !(ownerSecret || '').trim()) {
+        Alert.alert('Remote access', 'Owner secret required when using a remote URL. Set the same secret as the server.');
+      }
       const cleaned: Record<string, any> = {};
       for (const [k, v] of Object.entries(cfg)) {
         if (v !== '' && v !== undefined) cleaned[k] = v;
@@ -139,7 +158,7 @@ export function SettingsScreen() {
     } catch (e: any) {
       Alert.alert('Save failed', e.message);
     }
-  }, [base, ownerSecret, cfg, paperMode]);
+  }, [base, ownerSecret, cfg, paperMode, remoteEnabled, remoteUrl]);
 
   const saveInstallUrl = useCallback(async () => {
     const v = installPageUrl.trim() || DEFAULT_INSTALL_URL;
@@ -304,6 +323,45 @@ export function SettingsScreen() {
         Alert.alert('API health', msg);
         return;
       }
+      if (action === 'testRemote') {
+        await setRemoteAccessEnabled(remoteEnabled);
+        await setRemoteApiUrl(remoteUrl);
+        await setOwnerSecret(ownerSecret);
+        if (remoteEnabled && !remoteUrl.trim()) {
+          Alert.alert('Remote access', 'Set a remote API URL first (Tailscale / Cloudflare / SSH).');
+          return;
+        }
+        if (remoteEnabled && !(ownerSecret || '').trim()) {
+          Alert.alert('Remote access', 'Owner secret required for remote. Same value as OWNER_SHARED_SECRET / data/.owner_secret.');
+        }
+        const t0 = Date.now();
+        const st = await api.remoteStatus();
+        const ms = Date.now() - t0;
+        let sessionOk = '';
+        try {
+          const sess = await api.remoteSession('mobile-settings');
+          sessionOk = sess?.ok ? 'session=ok' : 'session=?';
+        } catch (e: any) {
+          sessionOk = `session=${e?.message || 'fail'}`.slice(0, 80);
+        }
+        const msg = [
+          `remote_access=${st.remote_access_enabled}`,
+          `hardened=${st.hardened}`,
+          `auth=${st.auth}`,
+          `secret_required=${st.secret_required}`,
+          `live_locked=${st.live_locked}`,
+          `prefer_tunnel=${st.prefer_tunnel}`,
+          sessionOk,
+          `${ms}ms`,
+          await getBaseUrl(),
+        ].join(' · ');
+        setRemoteStatusHint(msg);
+        setApiSecured(
+          st.auth === 'shared_secret' || st.secret_required ? 'yes' : st.auth === 'open' ? 'no' : 'unknown',
+        );
+        Alert.alert('Remote connection', msg);
+        return;
+      }
       if (action === 'ownerStatus') {
         const st = await api.ownerStatus();
         const auth = String(st.auth || '');
@@ -377,7 +435,7 @@ export function SettingsScreen() {
     } catch (e: any) {
       Alert.alert('Action failed', e.message || String(e));
     }
-  }, [base, save, unlockLive, saveKeys, kill, saveInstallUrl, packs]);
+  }, [base, save, unlockLive, saveKeys, kill, saveInstallUrl, packs, remoteEnabled, remoteUrl, ownerSecret]);
 
 
   const sections = useMemo(() => {
@@ -395,6 +453,27 @@ export function SettingsScreen() {
       { id: 'owner', kind: 'btn', label: 'Check /owner/status', action: 'ownerStatus', tone: 'locked' },
       { id: 'exw', kind: 'btn', label: 'Export watchlist (data/)', action: 'exportWatch', tone: 'locked' },
       { id: 'exp', kind: 'btn', label: 'Peek paper export', action: 'exportPaper', tone: 'locked' },
+    ];
+
+    const remoteRows: Row[] = [
+      { id: 'ra-hint', kind: 'hint', text: 'Reach your API away from home via Tailscale, Cloudflare Tunnel, or SSH — not a naked public IP. Live trading stays locked.' },
+      { id: 'ra-toggle', kind: 'remoteToggle' },
+      { id: 'ra-url-hint', kind: 'hint', text: 'Remote API URL (e.g. http://100.x.y.z:8000 Tailscale or https://… Cloudflare). Stored in SecureStore.' },
+      { id: 'ra-url', kind: 'remoteUrl' },
+      { id: 'ra-secret-hint', kind: 'hint', text: 'Owner secret (same SecureStore field as API server). Required for remote — sent as X-Owner-Secret only.' },
+      { id: 'ra-secret', kind: 'ownerSecret' },
+      ...(remoteEnabled && !(ownerSecret || '').trim()
+        ? [{ id: 'ra-warn-secret', kind: 'warn' as const, text: 'Remote enabled without owner secret — server will reject non-/health routes when hardened.' }]
+        : []),
+      ...(remoteEnabled && remoteUrl.trim() && !/^https?:\/\//i.test(remoteUrl.trim())
+        ? [{ id: 'ra-warn-scheme', kind: 'warn' as const, text: 'Remote URL should start with http:// or https://' }]
+        : []),
+      ...(remoteEnabled && /\b(?:\d{1,3}\.){3}\d{1,3}\b/.test(remoteUrl) && !remoteUrl.includes('100.')
+        ? [{ id: 'ra-warn-ip', kind: 'warn' as const, text: 'Prefer Tailscale (100.x) / Cloudflare / SSH tunnel over a naked public IP.' }]
+        : []),
+      ...(remoteStatusHint ? [{ id: 'ra-status', kind: 'hint' as const, text: remoteStatusHint }] : []),
+      { id: 'ra-test', kind: 'btn', label: 'Test remote connection', action: 'testRemote', tone: 'accent' },
+      { id: 'ra-docs', kind: 'hint', text: 'Server: REMOTE_ACCESS_ENABLED=1 + OWNER_SHARED_SECRET. Docs: docs/REMOTE_ACCESS.md' },
     ];
 
     const installRows: Row[] = [
@@ -584,6 +663,7 @@ export function SettingsScreen() {
 
 return [
       { title: 'API server (your backend)', data: apiRows },
+      { title: 'Remote access', data: remoteRows },
       { title: 'Install on your iPhone', data: installRows },
       { title: 'Paper vs Live (paper-first)', data: paperRows },
       { title: 'Broker connect', data: brokerRows },
@@ -600,7 +680,7 @@ return [
       { title: 'Live trading (personal risk toggle)', data: live },
       { title: 'Save', data: saveSec },
     ];
-  }, [paperMode, sipEnabled, healthHint, apiSecured, remoteNoSecretWarn, ownerSecret, dataSourceStatus, liveUnlocked, brokerStatus, brokersCard, alpacaTestBusy, autoStatus, packs, coverage, packBusy]);
+  }, [paperMode, sipEnabled, healthHint, apiSecured, remoteNoSecretWarn, ownerSecret, dataSourceStatus, liveUnlocked, brokerStatus, brokersCard, alpacaTestBusy, autoStatus, packs, coverage, packBusy, remoteEnabled, remoteUrl, remoteStatusHint]);
 
   const renderItem = useCallback(({ item }: { item: Row }) => {
     switch (item.kind) {
@@ -680,6 +760,33 @@ return [
             secureTextEntry
             placeholder="X-Owner-Secret (SecureStore)"
             placeholderTextColor={colors.muted}
+          />
+        );
+      case 'remoteToggle':
+        return (
+          <View style={styles.switchRow}>
+            <Text style={styles.label}>Use remote URL (when away from LAN)</Text>
+            <Switch
+              value={remoteEnabled}
+              onValueChange={async (v) => {
+                setRemoteEnabled(v);
+                await setRemoteAccessEnabled(v);
+                const effective = v && remoteUrl.trim() ? remoteUrl.trim() : base;
+                setRemoteNoSecretWarn(!isLocalApiHost(effective) && !(ownerSecret || '').trim());
+              }}
+            />
+          </View>
+        );
+      case 'remoteUrl':
+        return (
+          <TextInput
+            style={styles.input}
+            value={remoteUrl}
+            onChangeText={setRemoteUrl}
+            autoCapitalize="none"
+            placeholder="http://100.x.y.z:8000"
+            placeholderTextColor={colors.muted}
+            keyboardType="url"
           />
         );
       case 'paperMode':
@@ -838,6 +945,7 @@ return [
   }, [
     cfg, base, ownerSecret, apiSecured, remoteNoSecretWarn, healthHint, paperMode, sipEnabled, dataSourceStatus, installPageUrl, autoStatus,
     liveUnlocked, apiKey, apiSecret, brokerStatus, setNum, setToggle, setStrategyToggle, setText, toggleSip, onAction,
+    remoteEnabled, remoteUrl,
   ]);
 
   const keyExtractor = useCallback((item: Row) => item.id, []);

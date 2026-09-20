@@ -212,6 +212,32 @@ export API_RATE_WINDOW_SEC=60
 
 Smoke: `python scripts/smoke_security.py`
 
+## Remote access
+
+Reach the API from your phone away from home **without** opening a naked public IP.
+
+**Enable (server):**
+
+```bash
+export OWNER_SHARED_SECRET='long-random-string'   # or auto data/.owner_secret
+export REMOTE_ACCESS_ENABLED=1                    # or PUT /config {"remote_access_enabled": true}
+python -m momentum_bot serve --host 127.0.0.1 --port 8000
+# Then: Tailscale | Cloudflare Tunnel | SSH -L  (see docs/REMOTE_ACCESS.md)
+```
+
+| Piece | Behavior |
+|-------|----------|
+| `remote_access_enabled` | Config + env `REMOTE_ACCESS_ENABLED=1` → forces hardened / owner-secret required |
+| `GET /remote/status` | Public posture probe (`prefer_tunnel`, `live_locked`, recommended tunnels) |
+| `POST /remote/session` | Validates `X-Owner-Secret` (no separate JWT) |
+| Mobile | Settings → **Remote access**: remote URL + secret in SecureStore, Test connection; uses remote base URL when enabled |
+| Live | Stays locked unless `LIVE_TRADING_ENABLED=1` |
+| Prefer | Tailscale / Cloudflare Tunnel / SSH over public IP |
+
+Quick printout: `bash scripts/print_remote_setup.sh` · Smoke: `python scripts/smoke_remote_access.py` · Full guide: [`docs/REMOTE_ACCESS.md`](docs/REMOTE_ACCESS.md)
+
+
+
 
 ### iPhone standalone (private TestFlight / sideload)
 

@@ -4,6 +4,7 @@ Practical private-trading-OS hardening for GAMMA-R (honest: not SOC2 / bank-grad
 Env knobs:
   OWNER_SHARED_SECRET / API_SHARED_SECRET — shared owner gate
   REQUIRE_API_SECRET=1 / GAMMA_R_HARDENED=1 — force secret even on loopback
+  REMOTE_ACCESS_ENABLED=1 — treat as remote; force owner secret (same as hardened)
   GAMMA_R_BIND_HOST — set by `serve` so hardened_mode matches CLI bind
   CORS_ALLOW_ORIGINS — comma-separated allowlist (never "*")
   API_RATE_LIMIT / API_RATE_WINDOW_SEC — mutating + /copilot limits
@@ -86,9 +87,23 @@ def is_loopback_host(host: Optional[str] = None) -> bool:
     return h in _LOOPBACK
 
 
+def remote_access_enabled() -> bool:
+    """True when remote access is explicitly opted in (env or runtime config)."""
+    if _truthy("REMOTE_ACCESS_ENABLED"):
+        return True
+    try:
+        from .config import get_runtime_config
+
+        return bool(getattr(get_runtime_config(), "remote_access_enabled", False))
+    except Exception:
+        return False
+
+
 def hardened_mode(host: Optional[str] = None) -> bool:
     """True when secret must be enforced for non-exempt routes."""
     if _truthy("REQUIRE_API_SECRET") or _truthy("GAMMA_R_HARDENED"):
+        return True
+    if remote_access_enabled():
         return True
     return not is_loopback_host(host)
 
@@ -213,8 +228,8 @@ _PUBLIC_PAPER_PATHS = {
 
 
 def auth_exempt_paths(*, protect_docs: bool = False) -> Set[str]:
-    """Paths that skip owner-secret auth. /health + public PAPER leaderboard always exempt."""
-    exempt = {"/health"} | set(_PUBLIC_PAPER_PATHS)
+    """Paths that skip owner-secret auth. /health + /remote/status + public PAPER leaderboard."""
+    exempt = {"/health", "/remote/status"} | set(_PUBLIC_PAPER_PATHS)
     if not protect_docs:
         exempt |= set(_DOCS_PATHS)
     return exempt

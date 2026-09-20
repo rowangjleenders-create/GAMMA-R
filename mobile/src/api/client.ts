@@ -5,7 +5,12 @@ const DEFAULT_TIMEOUT_MS = 30_000;
 const SCAN_TIMEOUT_MS = 120_000;
 const LONG_TIMEOUT_MS = 600_000;
 
-export async function getBaseUrl(): Promise<string> {
+const OWNER_SECRET_KEY = 'ownerSecret';
+const REMOTE_ENABLED_KEY = 'remoteAccessEnabled';
+const REMOTE_URL_KEY = 'remoteApiUrl';
+
+/** Local / LAN API URL (used when remote access toggle is off). */
+export async function getLocalBaseUrl(): Promise<string> {
   return (await AsyncStorage.getItem('apiBaseUrl')) || DEFAULT_BASE;
 }
 
@@ -13,7 +18,35 @@ export async function setBaseUrl(url: string): Promise<void> {
   await AsyncStorage.setItem('apiBaseUrl', url.replace(/\/$/, ''));
 }
 
-const OWNER_SECRET_KEY = 'ownerSecret';
+export async function getRemoteAccessEnabled(): Promise<boolean> {
+  return (await AsyncStorage.getItem(REMOTE_ENABLED_KEY)) === '1';
+}
+
+export async function setRemoteAccessEnabled(enabled: boolean): Promise<void> {
+  await AsyncStorage.setItem(REMOTE_ENABLED_KEY, enabled ? '1' : '0');
+}
+
+export async function getRemoteApiUrl(): Promise<string> {
+  return (await AsyncStorage.getItem(REMOTE_URL_KEY)) || '';
+}
+
+export async function setRemoteApiUrl(url: string): Promise<void> {
+  const v = (url || '').trim().replace(/\/$/, '');
+  if (!v) await AsyncStorage.removeItem(REMOTE_URL_KEY);
+  else await AsyncStorage.setItem(REMOTE_URL_KEY, v);
+}
+
+/**
+ * Effective API base URL: remote URL when remote access is enabled and set,
+ * otherwise the local/LAN apiBaseUrl.
+ */
+export async function getBaseUrl(): Promise<string> {
+  if (await getRemoteAccessEnabled()) {
+    const remote = (await getRemoteApiUrl()).trim();
+    if (remote) return remote.replace(/\/$/, '');
+  }
+  return getLocalBaseUrl();
+}
 
 /** Owner API secret — SecureStore only; never log the value. */
 export async function getOwnerSecret(): Promise<string> {
@@ -292,6 +325,12 @@ export const api = {
   dataSourceEvents: () => req<{ events: any[] }>('/data-source/events'),
   resetDataSourceFallback: () => req<any>('/data-source/reset-fallback', { method: 'POST' }),
   ownerStatus: () => req<any>('/owner/status'),
+  remoteStatus: () => req<any>('/remote/status'),
+  remoteSession: (clientHint?: string) =>
+    req<any>('/remote/session', {
+      method: 'POST',
+      body: JSON.stringify({ client: clientHint || 'mobile' }),
+    }),
   ownerFiles: () => req<{ data_dir: string; files: { name: string; bytes: number }[] }>('/owner/files'),
   ownerExport: (name: string) => req<{ name: string; file: string; content: any }>(`/owner/export/${name}`),
   ownerImport: (name: string, content: any) =>

@@ -473,6 +473,9 @@ class StrategyConfig:
     # --- Paper options simulator (educational; no live options) ---
     paper_options_enabled: bool = True
 
+    # --- Remote access (prefer Tailscale/Cloudflare/SSH; never naked public IP) ---
+    remote_access_enabled: bool = False
+
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
 

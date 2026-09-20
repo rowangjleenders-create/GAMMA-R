@@ -280,6 +280,8 @@ from .security import (
     client_ip,
     extract_provided_secret,
     hardened_mode,
+    remote_access_enabled as _remote_access_enabled,
+    bind_host as _bind_host,
     redact_obj,
     redact_text,
     scrub_url,
@@ -417,6 +419,69 @@ def health():
         "live_trading_enabled": live_trading_enabled(),
         "owner_mode": _owner_mode(),
         "features": features,
+    }
+
+
+class RemoteSessionBody(BaseModel):
+    """Optional client hint for POST /remote/session (no JWT minted — secret header is the session)."""
+    client: Optional[str] = None
+    note: Optional[str] = None
+
+
+@app.get("/remote/status")
+def remote_status():
+    """
+    Public probe for remote-access posture (no secrets).
+    Prefer Tailscale / Cloudflare Tunnel / SSH over a naked public IP.
+    """
+    ra = _remote_access_enabled()
+    hard = hardened_mode()
+    secret_on = bool(_shared_secret())
+    return {
+        "remote_access_enabled": ra,
+        "hardened": hard,
+        "auth": auth_status_label(),
+        "secret_required": hard or secret_on,
+        "secret_configured": secret_on,
+        "bind_host": _bind_host(),
+        "live_trading_enabled": live_trading_enabled(),
+        "live_locked": not live_trading_enabled(),
+        "prefer_tunnel": True,
+        "recommended_tunnels": ["tailscale", "cloudflare_tunnel", "ssh_tunnel"],
+        "warnings": [
+            "Do not expose 0.0.0.0 to the public internet without TLS + owner secret.",
+            "Prefer Tailscale, Cloudflare Tunnel, or SSH reverse tunnel over a naked public IP.",
+            "Live trading stays locked unless LIVE_TRADING_ENABLED=1 (fail-closed).",
+            "Owner secret required for all non-exempt routes when remote or non-loopback.",
+        ],
+        "docs": "See docs/REMOTE_ACCESS.md or scripts/remote_access_setup.md",
+    }
+
+
+@app.post("/remote/session")
+def remote_session(body: Optional[RemoteSessionBody] = None):
+    """
+    Validate owner secret for remote clients (middleware already enforced).
+    Does not mint a separate JWT — keep sending X-Owner-Secret / Bearer.
+    """
+    ra = _remote_access_enabled()
+    if not ra and not hardened_mode():
+        # Still allow check on loopback open mode for mobile Test connection
+        pass
+    return {
+        "ok": True,
+        "remote_access_enabled": ra,
+        "hardened": hardened_mode(),
+        "auth": auth_status_label(),
+        "live_locked": not live_trading_enabled(),
+        "session": {
+            "mode": "owner_secret_header",
+            "header": "X-Owner-Secret",
+            "alt": "Authorization: Bearer <secret>",
+            "note": "No separate JWT. Reuse the owner secret on each request.",
+            "client": (body.client if body else None),
+        },
+        "prefer_tunnel": True,
     }
 
 

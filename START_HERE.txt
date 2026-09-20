@@ -1,0 +1,1 @@
+Open /workspace/shared/GAMMA-R as the project. Read OPEN_IN_WORKSPACE.md and BUILDER_PROMPT.md. Co-pilot is E-ve. Paper-first.

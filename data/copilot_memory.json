@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-20T19:05:56Z",
+  "preferences": {
+    "prefer_sectors": [
+      "tech"
+    ],
+    "avoid_sectors": [
+      "biotech"
+    ],
+    "avoid_themes": [],
+    "risk_comfort": "low",
+    "notes": [
+      "about my preferences?",
+      "about my preferences?"
+    ]
+  },
+  "strategy_interest": [],
+  "last_tickers": [
+    "SPY",
+    "NVDA",
+    "AAPL",
+    "MSFT",
+    "FED",
+    "KEEP"
+  ],
+  "facts": [
+    {
+      "text": "about my preferences?",
+      "kind": "pref",
+      "at": "2026-09-20T05:50:54Z"
+    },
+    {
+      "text": "about my preferences?",
+      "kind": "pref",
+      "at": "2026-09-20T05:50:54Z"
+    },
+    {
+      "text": "smoke fact prefer momentum",
+      "kind": "fact",
+      "at": "2026-09-20T05:51:58Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): Fed rates \u2014 Fed rates: Fed holds rates \n The Federal Reserve left the policy rate unchanged amid cooling inflation. more \n bad",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:27:12Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): Fed rates \u2014 Fed rates: Fed holds rates \n The Federal Reserve left the policy rate unchanged amid cooling inflation. more \n bad",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:27:24Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): Fed rates \u2014 Fed rates: Fed holds rates \n The Federal Reserve left the policy rate unchanged amid cooling inflation. more \n bad",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:27:42Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): Fed rates \u2014 Fed rates: Fed holds rates \n The Federal Reserve left the policy rate unchanged amid cooling inflation. more \n bad",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:40:46Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): Fed rates \u2014 Fed rates: Fed holds rates \n The Federal Reserve left the policy rate unchanged amid cooling inflation. more \n bad",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:40:59Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): Fed rates \u2014 Fed rates: Fed holds rates \n The Federal Reserve left the policy rate unchanged amid cooling inflation. more \n bad",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:41:26Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: @charset \"UTF-8\";.Modal-modalBackground{background:#000000b3;height:100%;left:0;overflow-y:auto;position:fixed;top:0;transition:background-color .4s;width:100%;z-index:100001}.Modal-modalBackgroundBlur{backdro",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:53:59Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:54:00Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:54:01Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): AAPL brief \u2014 AAPL brief: @charset \"UTF-8\";.Modal-modalBackground{background:#000000b3;height:100%;left:0;overflow-y:auto;position:fixed;top:0;transition:background-color .4s;width:100%;z-index:100001}.Modal-modalBackgroundBlur{backdr",
+      "kind": "web_learning",
+      "at": "2026-09-20T06:54:43Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: @charset \"UTF-8\";.Modal-modalBackground{background:#000000b3;height:100%;left:0;overflow-y:auto;position:fixed;top:0;transition:background-color .4s;width:100%;z-index:100001}.Modal-modalBackgroundBlur{backdro",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:04:29Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:04:31Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:04:32Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:04:33Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:04:35Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: @charset \"UTF-8\";.Modal-modalBackground{background:#000000b3;height:100%;left:0;overflow-y:auto;position:fixed;top:0;transition:background-color .4s;width:100%;z-index:100001}.Modal-modalBackgroundBlur{backdro",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:05:09Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:05:11Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: @charset \"UTF-8\";.Modal-modalBackground{background:#000000b3;height:100%;left:0;overflow-y:auto;position:fixed;top:0;transition:background-color .4s;width:100%;z-index:100001}.Modal-modalBackgroundBlur{backdro",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:05:50Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:05:51Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:05:52Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:05:53Z"
+    },
+    {
+      "text": "Web learn (2026-09-20): SPY brief \u2014 SPY brief: allowlisted fetch returned little usable text (paywall, block, or empty). Prefer equity/macro outlets; educational only.",
+      "kind": "web_learning",
+      "at": "2026-09-20T19:05:56Z"
+    }
+  ],
+  "outcomes": [
+    {
+      "ticker": "AAPL",
+      "pnl": -1.0,
+      "reason": "external:buy:test fill",
+      "strategy_id": "momentum",
+      "at": "2026-09-20T06:18:29Z"
+    },
+    {
+      "ticker": "AAPL",
+      "pnl": 49.0,
+      "reason": "external:sell:pnl=50",
+      "strategy_id": "momentum",
+      "at": "2026-09-20T06:18:30Z"
+    },
+    {
+      "ticker": "MSFT",
+      "pnl": -0.5,
+      "reason": "external:buy:hello",
+      "strategy_id": "mean_reversion",
+      "at": "2026-09-20T06:18:32Z"
+    },
+    {
+      "ticker": "MSFT",
+      "pnl": -22.56,
+      "reason": "external:sell:stopped out",
+      "strategy_id": null,
+      "at": "2026-09-20T06:19:33Z"
+    },
+    {
+      "ticker": "AAPL",
+      "pnl": 77.4,
+      "reason": "external:sell:sample long exit",
+      "strategy_id": "momentum",
+      "at": "2026-09-20T06:19:34Z"
+    },
+    {
+      "ticker": "NVDA",
+      "pnl": 30.0,
+      "reason": "external:sell:fifo_pair",
+      "strategy_id": "breakout",
+      "at": "2026-09-20T06:19:35Z"
+    },
+    {
+      "ticker": "SPY",
+      "pnl": 30.0,
+      "reason": "external:sell:import",
+      "strategy_id": "relative_strength",
+      "at": "2026-09-20T06:19:36Z"
+    },
+    {
+      "ticker": "MSFT",
+      "pnl": -22.56,
+      "reason": "external:sell:stopped out",
+      "strategy_id": null,
+      "at": "2026-09-20T06:19:47Z"
+    },
+    {
+      "ticker": "AAPL",
+      "pnl": 77.4,
+      "reason": "external:sell:sample long exit",
+      "strategy_id": "momentum",
+      "at": "2026-09-20T06:19:47Z"
+    },
+    {
+      "ticker": "NVDA",
+      "pnl": 30.0,
+      "reason": "external:sell:fifo_pair",
+      "strategy_id": "breakout",
+      "at": "2026-09-20T06:19:47Z"
+    },
+    {
+      "ticker": "SPY",
+      "pnl": 30.0,
+      "reason": "external:sell:import",
+      "strategy_id": "relative_strength",
+      "at": "2026-09-20T06:19:47Z"
+    },
+    {
+      "ticker": "MSFT",
+      "pnl": -22.56,
+      "reason": "external:sell:stopped out",
+      "strategy_id": null,
+      "at": "2026-09-20T06:40:50Z"
+    },
+    {
+      "ticker": "AAPL",
+      "pnl": 77.4,
+      "reason": "external:sell:sample long exit",
+      "strategy_id": "momentum",
+      "at": "2026-09-20T06:40:50Z"
+    },
+    {
+      "ticker": "NVDA",
+      "pnl": 30.0,
+      "reason": "external:sell:fifo_pair",
+      "strategy_id": "breakout",
+      "at": "2026-09-20T06:40:50Z"
+    },
+    {
+      "ticker": "SPY",
+      "pnl": 30.0,
+      "reason": "external:sell:import",
+      "strategy_id": "relative_strength",
+      "at": "2026-09-20T06:40:50Z"
+    },
+    {
+      "ticker": "MSFT",
+      "pnl": -22.56,
+      "reason": "external:sell:stopped out",
+      "strategy_id": null,
+      "at": "2026-09-20T06:41:03Z"
+    },
+    {
+      "ticker": "AAPL",
+      "pnl": 77.4,
+      "reason": "external:sell:sample long exit",
+      "strategy_id": "momentum",
+      "at": "2026-09-20T06:41:03Z"
+    },
+    {
+      "ticker": "NVDA",
+      "pnl": 30.0,
+      "reason": "external:sell:fifo_pair",
+      "strategy_id": "breakout",
+      "at": "2026-09-20T06:41:03Z"
+    },
+    {
+      "ticker": "SPY",
+      "pnl": 30.0,
+      "reason": "external:sell:import",
+      "strategy_id": "relative_strength",
+      "at": "2026-09-20T06:41:03Z"
+    },
+    {
+      "ticker": "MSFT",
+      "pnl": -22.56,
+      "reason": "external:sell:stopped out",
+      "strategy_id": null,
+      "at": "2026-09-20T06:41:25Z"
+    },
+    {
+      "ticker": "AAPL",
+      "pnl": 77.4,
+      "reason": "external:sell:sample long exit",
+      "strategy_id": "momentum",
+      "at": "2026-09-20T06:41:25Z"
+    },
+    {
+      "ticker": "NVDA",
+      "pnl": 30.0,
+      "reason": "external:sell:fifo_pair",
+      "strategy_id": "breakout",
+      "at": "2026-09-20T06:41:25Z"
+    },
+    {
+      "ticker": "SPY",
+      "pnl": 30.0,
+      "reason": "external:sell:import",
+      "strategy_id": "relative_strength",
+      "at": "2026-09-20T06:41:25Z"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Install GAMMA-R</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #151b24;
+      --card-alt: #1a2230;
+      --border: #2a3444;
+      --text: #e8eef7;
+      --muted: #8b9bb0;
+      --accent: #4f8cff;
+      --good: #3dd68c;
+      --warn: #f0b429;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 24px 16px 48px;
+    }
+    .wrap { max-width: 520px; margin: 0 auto; }
+    h1 { font-size: 1.6rem; margin: 0 0 6px; font-weight: 800; }
+    h2 { font-size: 1.05rem; color: var(--accent); margin: 28px 0 10px; font-weight: 700; }
+    .sub { color: var(--muted); margin: 0 0 20px; font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--card-alt);
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .badge.quick { color: var(--good); border: 1px solid rgba(61, 214, 140, 0.35); }
+    .badge.perm { color: var(--warn); border: 1px solid rgba(240, 180, 41, 0.35); }
+    p { margin: 0 0 10px; color: var(--muted); font-size: 0.92rem; }
+    ol { margin: 0 0 8px; padding-left: 1.2rem; color: var(--muted); font-size: 0.92rem; }
+    li { margin-bottom: 6px; }
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin: 8px 0;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active { opacity: 0.9; }
+    .btn.secondary {
+      background: var(--card-alt);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn.disabled, .btn[aria-disabled="true"] {
+      opacity: 0.45;
+      pointer-events: none;
+    }
+    .todo {
+      font-size: 0.8rem;
+      color: var(--warn);
+      background: rgba(240, 180, 41, 0.08);
+      border: 1px dashed rgba(240, 180, 41, 0.4);
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 8px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85em;
+      background: var(--card-alt);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: var(--text);
+      word-break: break-all;
+    }
+    .hidden { display: none !important; }
+    footer { margin-top: 32px; color: var(--muted); font-size: 0.8rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Install GAMMA-R</h1>
+    <p class="sub">Two ways to get the app on your phone — pick the quick path or a permanent standalone install.</p>
+
+    <!-- Detected platform CTA -->
+    <div class="card" id="platformCard">
+      <span class="badge quick">One-tap</span>
+      <p id="platformHint">Detecting your phone…</p>
+      <a class="btn" id="storeBtn" href="#">Open store</a>
+      <a class="btn secondary" id="altStoreBtn" href="#" style="display:none">Other store</a>
+    </div>
+
+    <!-- Quick path: Expo Go -->
+    <h2>Quick path — Expo Go</h2>
+    <div class="card">
+      <span class="badge quick">Recommended to try first</span>
+      <ol>
+        <li>Install <strong>Expo Go</strong> (button above, or search the App Store / Play Store).</li>
+        <li>Open Expo Go and scan the QR code from your developer’s Expo start screen, <em>or</em> tap the project link below.</li>
+        <li>In the app, open <strong>Settings</strong> and enter your API server address (example: <code>http://192.168.1.10:8000</code>).</li>
+        <li>You’re done — Scan, Portfolio, and Watchlist talk to your server.</li>
+      </ol>
+      <a class="btn secondary" id="expLink" href="exp://">Open in Expo Go (<code>exp://</code>)</a>
+      <p style="margin-top:10px">
+        Project slug: <code>momentum-bot</code>. Scheme: <code>momentum-bot</code>.<br />
+        If the link does nothing, open Expo Go → enter URL manually, e.g.<br />
+        <code id="expHint">exp://127.0.0.1:8081</code>
+      </p>
+      <div class="todo">
+        TODO: set a published Expo URL (e.g. <code>exp://u.expo.dev/…</code> or <code>exp://YOUR_LAN_IP:8081</code>)
+        by editing the <code>data-exp-url</code> attribute on <code>#expLink</code> below, or the JS config at the bottom of this file.
+      </div>
+    </div>
+
+    <!-- Permanent path: standalone -->
+    <h2>Permanent path — standalone app</h2>
+    <div class="card">
+      <span class="badge perm">No Expo Go needed</span>
+      <ol>
+        <li>Download the Android APK or iOS IPA from the buttons below (after your developer publishes a build).</li>
+        <li>Install it (Android: open the APK file; iOS: needs a signed IPA / TestFlight — Apple developer account required).</li>
+        <li>Open GAMMA-R → <strong>Settings</strong> → enter your API server address.</li>
+        <li>Done — same features, as a normal app icon.</li>
+      </ol>
+
+      <a class="btn" id="apkBtn" href="#" aria-disabled="true">Download Android APK</a>
+      <a class="btn secondary" id="ipaBtn" href="#" aria-disabled="true">Download iOS IPA</a>
+
+      <div class="todo">
+        TODO (EAS artifacts): replace placeholder URLs in the JS config at the bottom of this file.<br />
+        After <code>eas build --profile preview</code> / <code>production</code>, paste the Expo artifact download URLs into
+        <code>APK_URL</code> and <code>IPA_URL</code>. IPA builds require an Apple Developer account.
+      </div>
+    </div>
+
+    <h2>After install</h2>
+    <div class="card">
+      <p>
+        The app does not ship with a public trading server. Someone must run the GAMMA-R API
+        (same Wi‑Fi / VPN / public host), then you type that address in Settings.
+      </p>
+      <p>Need more detail? Ask your admin for <code>INSTALL.md</code> (plain-English, no terminal steps).</p>
+    </div>
+
+    <footer>GAMMA-R · educational paper trading · dark UI</footer>
+  </div>
+
+  <script>
+    // —— Configurable URLs (edit these after EAS / Expo publish) ——
+    var CONFIG = {
+      // TODO: EAS Build artifact URLs (from expo.dev build page)
+      APK_URL: "", // e.g. "https://expo.dev/artifacts/eas/XXXX.apk"
+      IPA_URL: "", // e.g. "https://expo.dev/artifacts/eas/YYYY.ipa" — needs Apple account to build
+
+      // Expo Go deep link to open the project (LAN or published)
+      // TODO: replace with your machine LAN IP or published exp URL
+      EXP_URL: "exp://127.0.0.1:8081",
+
+      // App Store / Play Store — Expo Go
+      EXPO_GO_IOS: "https://apps.apple.com/app/expo-go/id982107779",
+      EXPO_GO_ANDROID: "https://play.google.com/store/apps/details?id=host.exp.exponent",
+      // Native deep links that open Expo Go if already installed
+      EXPO_GO_IOS_DEEP: "itms-apps://apps.apple.com/app/expo-go/id982107779",
+      EXPO_GO_ANDROID_DEEP: "market://details?id=host.exp.exponent"
+    };
+
+    function isIOS() {
+      return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    }
+    function isAndroid() {
+      return /Android/i.test(navigator.userAgent);
+    }
+
+    var hint = document.getElementById("platformHint");
+    var storeBtn = document.getElementById("storeBtn");
+    var altStoreBtn = document.getElementById("altStoreBtn");
+    var expLink = document.getElementById("expLink");
+    var expHint = document.getElementById("expHint");
+    var apkBtn = document.getElementById("apkBtn");
+    var ipaBtn = document.getElementById("ipaBtn");
+
+    expLink.setAttribute("data-exp-url", CONFIG.EXP_URL);
+    expLink.href = CONFIG.EXP_URL;
+    expHint.textContent = CONFIG.EXP_URL;
+
+    if (isIOS()) {
+      hint.textContent = "You’re on iPhone / iPad. Tap below to get Expo Go from the App Store (opens the store app when possible).";
+      storeBtn.textContent = "Get Expo Go — App Store";
+      storeBtn.href = CONFIG.EXPO_GO_IOS_DEEP;
+      storeBtn.addEventListener("click", function (e) {
+        // Fallback to https if deep link fails
+        setTimeout(function () { window.location.href = CONFIG.EXPO_GO_IOS; }, 800);
+      });
+      altStoreBtn.style.display = "block";
+      altStoreBtn.textContent = "Play Store (Android Expo Go)";
+      altStoreBtn.href = CONFIG.EXPO_GO_ANDROID;
+    } else if (isAndroid()) {
+      hint.textContent = "You’re on Android. Tap below to get Expo Go from the Play Store (opens the store app when possible).";
+      storeBtn.textContent = "Get Expo Go — Play Store";
+      storeBtn.href = CONFIG.EXPO_GO_ANDROID_DEEP;
+      storeBtn.addEventListener("click", function (e) {
+        setTimeout(function () { window.location.href = CONFIG.EXPO_GO_ANDROID; }, 800);
+      });
+      altStoreBtn.style.display = "block";
+      altStoreBtn.textContent = "App Store (iOS Expo Go)";
+      altStoreBtn.href = CONFIG.EXPO_GO_IOS;
+    } else {
+      hint.textContent = "Open this page on your phone for one-tap store links. Desktop: pick a store below.";
+      storeBtn.textContent = "Expo Go — App Store (iOS)";
+      storeBtn.href = CONFIG.EXPO_GO_IOS;
+      altStoreBtn.style.display = "block";
+      altStoreBtn.textContent = "Expo Go — Play Store (Android)";
+      altStoreBtn.href = CONFIG.EXPO_GO_ANDROID;
+    }
+
+    function wireDownload(btn, url, label) {
+      if (url && url.indexOf("http") === 0) {
+        btn.href = url;
+        btn.removeAttribute("aria-disabled");
+        btn.classList.remove("disabled");
+        btn.textContent = label;
+      } else {
+        btn.href = "#";
+        btn.setAttribute("aria-disabled", "true");
+        btn.classList.add("disabled");
+        btn.textContent = label + " (coming soon)";
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          alert("Standalone build not published yet. Ask your developer to run an EAS build and paste the artifact URL into install.html.");
+        });
+      }
+    }
+    wireDownload(apkBtn, CONFIG.APK_URL, "Download Android APK");
+    wireDownload(ipaBtn, CONFIG.IPA_URL, "Download iOS IPA");
+  </script>
+</body>
+</html>

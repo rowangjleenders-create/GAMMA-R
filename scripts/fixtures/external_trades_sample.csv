@@ -1,0 +1,7 @@
+symbol,side,qty,price,datetime,fee,order_id,notes,strategy
+AAPL,buy,10,190.50,2026-08-01T14:35:00Z,0.05,ext-aapl-1,sample long entry,momentum
+AAPL,sell,10,198.25,2026-08-08T15:10:00Z,0.05,ext-aapl-2,sample long exit,momentum
+MSFT,buy,5,420.00,2026-08-02T13:00:00Z,0.03,ext-msft-1,,
+MSFT,sell,5,415.50,2026-08-06T16:00:00Z,0.03,ext-msft-2,stopped out,
+NVDA,BUY,2,110.00,2026-08-10T14:00:00Z,,ext-nvda-1,,breakout
+NVDA,SELL,2,125.00,2026-08-15T14:30:00Z,,ext-nvda-2,,breakout

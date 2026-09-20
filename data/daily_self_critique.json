@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "generated_at": "2026-09-20T06:48:21Z",
+  "label": "Daily self-critique \u2014 beat retail bots on process, stay honest on limits",
+  "score": {
+    "active_advantages": 7,
+    "degraded_count": 2,
+    "closed_gaps": 27,
+    "hard_open_gaps": 5,
+    "feed_badge": "Delayed",
+    "overnight_notes": 0
+  },
+  "strengths": [
+    "router",
+    "firewall",
+    "crash",
+    "external",
+    "audit",
+    "leaderboard",
+    "scoreboard"
+  ],
+  "weaknesses": [
+    "web: copilot_web_enabled=false",
+    "feed: Delayed or fallback feed \u2014 top-of-book NBBO needs Alpaca keys / healthy SIP|IEX",
+    "Feed Delayed \u2014 competitors feel snappier without us faking L2",
+    "No overnight web digest yet \u2014 mute vs research-compounding bots"
+  ],
+  "next_actions": [
+    "Enable Alpaca keys for NBBO/SIP|IEX top-of-book",
+    "Enable auto_web_learn_enabled or POST /auto/web-learn/run",
+    "Enable Alpaca keys / SIP|IEX for NBBO top-of-book",
+    "Turn on scheduled web learning",
+    "Import external brokerage fills",
+    "(Hard) True L2 book \u2014 intentionally open"
+  ],
+  "intentional_limits": [
+    "True Level-2 order book / full tape (Trade Ideas class)",
+    "Marketed live-audited returns",
+    "Full live options order routing",
+    "Futures execution",
+    "Colocation / exchange-proximate infra"
+  ],
+  "not_level2": true,
+  "live_audited_returns": false,
+  "paper_first": true,
+  "summary": "Active edges=7 degraded=2 closed_gaps=27. Feed=Delayed. Overnight notes=0. Refuse fake L2 / live-audited claims.",
+  "improvements_top": [
+    {
+      "id": "enable_nbbo",
+      "title": "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"
+    },
+    {
+      "id": "schedule_web",
+      "title": "Turn on scheduled web learning"
+    },
+    {
+      "id": "import_external",
+      "title": "Import external brokerage fills"
+    },
+    {
+      "id": "hard_l2",
+      "title": "(Hard) True L2 book \u2014 intentionally open"
+    }
+  ]
+}

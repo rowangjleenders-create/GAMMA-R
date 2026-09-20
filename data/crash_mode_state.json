@@ -1,0 +1,265 @@
+{
+  "active": false,
+  "until": null,
+  "triggered_at": "2026-09-20T06:41:23Z",
+  "reason": "smoke cleanup",
+  "proxies": {
+    "SPY": {
+      "ok": true,
+      "triggered": true,
+      "ret": -0.101871,
+      "rebound": 0.0,
+      "drop_to_low": -0.101871,
+      "short_vol": 0.191286,
+      "long_vol": 0.176012,
+      "vol_ratio": 1.0868,
+      "reason": "drop -10.19% over 5d; severe drop"
+    }
+  },
+  "history": [
+    {
+      "at": "2026-09-20T06:02:40Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:02:40Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:02:40Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:02:46Z",
+      "event": "cleared",
+      "reason": "post-smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:02:52Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:02:52Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:02:52Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:03:06Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:03:06Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:03:06Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:03:07Z",
+      "event": "cleared",
+      "reason": "cleanup"
+    },
+    {
+      "at": "2026-09-20T06:03:13Z",
+      "event": "activated",
+      "reason": "verify",
+      "until": "2026-09-22T06:03:13Z",
+      "proxies": {}
+    },
+    {
+      "at": "2026-09-20T06:03:13Z",
+      "event": "cleared",
+      "reason": "done"
+    },
+    {
+      "at": "2026-09-20T06:03:18Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:03:18Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:03:18Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:03:19Z",
+      "event": "cleared",
+      "reason": "final"
+    },
+    {
+      "at": "2026-09-20T06:11:00Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:11:00Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:11:00Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:11:18Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:11:18Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:11:18Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:40:48Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:40:48Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:40:48Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:41:01Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:41:01Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:41:01Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    },
+    {
+      "at": "2026-09-20T06:41:23Z",
+      "event": "activated",
+      "reason": "smoke shock",
+      "until": "2026-09-23T06:41:23Z",
+      "proxies": {
+        "SPY": {
+          "ok": true,
+          "triggered": true,
+          "ret": -0.101871,
+          "rebound": 0.0,
+          "drop_to_low": -0.101871,
+          "short_vol": 0.191286,
+          "long_vol": 0.176012,
+          "vol_ratio": 1.0868,
+          "reason": "drop -10.19% over 5d; severe drop"
+        }
+      }
+    },
+    {
+      "at": "2026-09-20T06:41:23Z",
+      "event": "cleared",
+      "reason": "smoke cleanup"
+    }
+  ],
+  "updated_at": "2026-09-20T06:41:23Z"
+}

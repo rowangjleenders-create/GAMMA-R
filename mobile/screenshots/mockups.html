@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>GAMMA-R UI Mockups</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #111; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px; }
+  .grid { display: flex; flex-wrap: wrap; gap: 28px; }
+  .phone {
+    width: 390px; height: 844px; background: #0b0f14; border-radius: 36px;
+    border: 3px solid #2a3444; overflow: hidden; position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
+  }
+  .notch { height: 44px; background: #151b24; display:flex; align-items:center; justify-content:center;
+    color:#8b9bb0; font-size:12px; letter-spacing:.3px; }
+  .header { background:#151b24; padding:14px 16px; color:#e8eef7; font-size:18px; font-weight:600;
+    border-bottom:1px solid #2a3444; }
+  .content { padding:12px 14px; height: calc(844px - 44px - 52px - 64px); overflow:hidden; }
+  .tabbar {
+    position:absolute; bottom:0; left:0; right:0; height:64px; background:#151b24;
+    border-top:1px solid #2a3444; display:flex; justify-content:space-around; align-items:center;
+  }
+  .tab { color:#8b9bb0; font-size:11px; text-align:center; }
+  .tab.on { color:#4f8cff; }
+  .card { background:#151b24; border:1px solid #2a3444; border-radius:12px; padding:12px; margin-bottom:10px; }
+  .row { display:flex; justify-content:space-between; align-items:center; }
+  .ticker { color:#e8eef7; font-size:17px; font-weight:700; }
+  .meta { color:#8b9bb0; font-size:12px; margin-top:4px; }
+  .fwd { color:#4f8cff; font-size:12px; margin-top:4px; }
+  .badge { font-size:10px; padding:2px 8px; border-radius:8px; background:#1a2230; color:#4f8cff; }
+  .badge.w { color:#f0b429; }
+  .good { color:#3dd68c; }
+  .bad { color:#ff6b6b; }
+  .btn { background:#4f8cff; color:#fff; border:none; border-radius:10px; padding:12px; width:100%;
+    font-size:14px; font-weight:600; margin-top:8px; text-align:center; }
+  .btn.ghost { background:#1a2230; color:#e8eef7; border:1px solid #2a3444; }
+  .section { color:#8b9bb0; font-size:12px; text-transform:uppercase; letter-spacing:.5px; margin:8px 0 6px; }
+  .impact { background:#1a2230; border-radius:10px; padding:10px; margin-bottom:10px; }
+  .big { color:#e8eef7; font-size:28px; font-weight:700; }
+  .chat { display:flex; flex-direction:column; gap:8px; }
+  .bubble { max-width:85%; padding:10px 12px; border-radius:14px; font-size:13px; line-height:1.35; }
+  .bubble.bot { background:#151b24; color:#e8eef7; align-self:flex-start; border:1px solid #2a3444; }
+  .bubble.me { background:#4f8cff; color:#fff; align-self:flex-end; }
+  .micbar { display:flex; gap:8px; margin-top:10px; align-items:center; }
+  .mic { width:44px; height:44px; border-radius:22px; background:#ff6b6b; display:flex; align-items:center;
+    justify-content:center; color:#fff; font-size:18px; }
+  .input { flex:1; background:#151b24; border:1px solid #2a3444; border-radius:20px; padding:10px 14px;
+    color:#8b9bb0; font-size:13px; }
+  .toggle { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid #2a3444; }
+  .toggle .l { color:#e8eef7; font-size:14px; }
+  .toggle .s { color:#8b9bb0; font-size:11px; margin-top:2px; }
+  .switch { width:46px; height:26px; background:#3dd68c; border-radius:13px; position:relative; }
+  .switch:after { content:''; position:absolute; right:3px; top:3px; width:20px; height:20px;
+    background:#fff; border-radius:10px; }
+  .switch.off { background:#3a4555; }
+  .switch.off:after { left:3px; right:auto; }
+  .label { position:absolute; top:-18px; left:0; right:0; text-align:center; color:#8b9bb0; font-size:12px; }
+  .wrap { position:relative; }
+</style>
+</head>
+<body>
+<div class="grid">
+
+<div class="wrap"><div class="label">1 · Dashboard / Scan</div>
+<div class="phone" id="dash">
+  <div class="notch">9:41</div>
+  <div class="header">GAMMA-R</div>
+  <div class="content">
+    <div class="impact">
+      <div class="section">News impact (sectors)</div>
+      <div class="meta">Technology: move 1.8% (24h +0.42)</div>
+      <div class="meta">Healthcare: move 0.9% (24h +0.11)</div>
+    </div>
+    <div class="section">Watchlist Signals</div>
+    <div class="card">
+      <div class="row"><span class="ticker">NVDA</span><span class="badge w">WATCH</span></div>
+      <div class="meta">Mom 12.4% · Vol x2.10 · $118.40</div>
+      <div class="fwd">Forward 67% · conf 72% ✓</div>
+      <div class="meta">Regime: bull</div>
+    </div>
+    <div class="section">Market Scan (top 10%)</div>
+    <div class="card">
+      <div class="row"><span class="ticker">PLTR</span><span class="badge">SCAN</span></div>
+      <div class="meta">Mom 9.1% · Vol x1.85 · $42.10</div>
+      <div class="fwd">Forward 61% · conf 68% ✓</div>
+    </div>
+    <div class="card">
+      <div class="row"><span class="ticker">SMCI</span><span class="badge">SCAN</span></div>
+      <div class="meta">Mom 8.3% · Vol x1.72 · $51.20</div>
+      <div class="fwd">Forward 58% · conf 64% ✓</div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div class="tab on">Scan</div><div class="tab">Paper</div><div class="tab">Watch</div>
+    <div class="tab">Learn</div><div class="tab">E-ve</div><div class="tab">Settings</div>
+  </div>
+</div></div>
+
+<div class="wrap"><div class="label">2 · Signal Detail</div>
+<div class="phone" id="detail">
+  <div class="notch">9:41</div>
+  <div class="header">← Signal · NVDA</div>
+  <div class="content">
+    <div class="card">
+      <div class="ticker">NVDA</div>
+      <div class="big">$118.40</div>
+      <div class="meta good">Momentum +12.4% · Volume 2.1× avg</div>
+    </div>
+    <div class="card">
+      <div class="section">Risk plan</div>
+      <div class="row"><span class="meta">Stop loss</span><span class="bad">$112.48 (−5%)</span></div>
+      <div class="row"><span class="meta">Take profit</span><span class="good">$136.16 (+15%)</span></div>
+      <div class="row"><span class="meta">Position size</span><span class="meta" style="color:#e8eef7">84 shares · $9,946</span></div>
+    </div>
+    <div class="card">
+      <div class="section">Forward estimate</div>
+      <div class="meta">Rise prob 67% · confidence 72%</div>
+      <div class="meta">Ensemble: LR + GBDT + rules ✓</div>
+    </div>
+    <div class="card">
+      <div class="section">News</div>
+      <div class="meta good">+ AI chip demand surge (0.82)</div>
+      <div class="meta">Neutral: Analyst day preview (0.12)</div>
+    </div>
+    <div class="btn">Execute Paper Trade</div>
+  </div>
+  <div class="tabbar">
+    <div class="tab on">Scan</div><div class="tab">Paper</div><div class="tab">Watch</div>
+    <div class="tab">Learn</div><div class="tab">E-ve</div><div class="tab">Settings</div>
+  </div>
+</div></div>
+
+<div class="wrap"><div class="label">3 · Paper Portfolio</div>
+<div class="phone" id="paper">
+  <div class="notch">9:41</div>
+  <div class="header">Paper</div>
+  <div class="content">
+    <div class="card">
+      <div class="section">Equity</div>
+      <div class="big good">$10,482</div>
+      <div class="meta">Cash $5,120 · P&amp;L +$482 (+4.8%)</div>
+    </div>
+    <div class="section">Open positions</div>
+    <div class="card">
+      <div class="row"><span class="ticker">NVDA</span><span class="good">+$312</span></div>
+      <div class="meta">84 @ $118.40 → $122.10 · stop $112.48</div>
+    </div>
+    <div class="card">
+      <div class="row"><span class="ticker">PLTR</span><span class="good">+$170</span></div>
+      <div class="meta">120 @ $42.10 → $43.52 · trailing on</div>
+    </div>
+    <div class="section">Closed today</div>
+    <div class="card">
+      <div class="row"><span class="ticker">SMCI</span><span class="bad">−$64</span></div>
+      <div class="meta">Exit: stop_loss · logged to learning</div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div class="tab">Scan</div><div class="tab on">Paper</div><div class="tab">Watch</div>
+    <div class="tab">Learn</div><div class="tab">E-ve</div><div class="tab">Settings</div>
+  </div>
+</div></div>
+
+<div class="wrap"><div class="label">4 · Watchlist</div>
+<div class="phone" id="watch">
+  <div class="notch">9:41</div>
+  <div class="header">Watchlist</div>
+  <div class="content">
+    <div class="meta" style="margin-bottom:8px">Pinned tickers get priority scans</div>
+    <div class="card row"><span class="ticker">NVDA</span><span class="badge w">PINNED</span></div>
+    <div class="card row"><span class="ticker">AMD</span><span class="badge w">PINNED</span></div>
+    <div class="card row"><span class="ticker">TSLA</span><span class="badge w">PINNED</span></div>
+    <div class="card row"><span class="ticker">META</span><span class="badge w">PINNED</span></div>
+    <div class="btn ghost">+ Add ticker</div>
+  </div>
+  <div class="tabbar">
+    <div class="tab">Scan</div><div class="tab">Paper</div><div class="tab on">Watch</div>
+    <div class="tab">Learn</div><div class="tab">E-ve</div><div class="tab">Settings</div>
+  </div>
+</div></div>
+
+<div class="wrap"><div class="label">5 · Learning</div>
+<div class="phone" id="learn">
+  <div class="notch">9:41</div>
+  <div class="header">Learning</div>
+  <div class="content">
+    <div class="card">
+      <div class="section">Day-one baseline</div>
+      <div class="meta">Lookback 10d · Vol 1.5× · Top 10% · SL 5% · TP 15%</div>
+    </div>
+    <div class="card">
+      <div class="section">Historical baseline (20y)</div>
+      <div class="meta">Best eras: 2013–17 bull · Worst: 2022 bear</div>
+      <div class="meta">Optimized lookback → 12d · vol → 1.6×</div>
+    </div>
+    <div class="card">
+      <div class="section">Live-learned</div>
+      <div class="meta good">Win rate 58% (24 closed)</div>
+      <div class="meta">Last adjust: raised min momentum (stops too often)</div>
+    </div>
+    <div class="btn ghost">Reset to defaults</div>
+    <div class="btn ghost">Run historical train</div>
+  </div>
+  <div class="tabbar">
+    <div class="tab">Scan</div><div class="tab">Paper</div><div class="tab">Watch</div>
+    <div class="tab on">Learn</div><div class="tab">E-ve</div><div class="tab">Settings</div>
+  </div>
+</div></div>
+
+<div class="wrap"><div class="label">6 · E-ve (voice)</div>
+<div class="phone" id="copilot">
+  <div class="notch">9:41</div>
+  <div class="header">E-ve</div>
+  <div class="content">
+    <div class="chat">
+      <div class="bubble bot">Paper mode is on. Live brokerage is locked. Ask me about signals, risk, or how to install the app.</div>
+      <div class="bubble me">Why is NVDA flagged?</div>
+      <div class="bubble bot">NVDA cleared momentum + volume, forward estimate 67%, and news sentiment is positive on AI demand. Stop sits 5% below entry.</div>
+    </div>
+    <div class="micbar">
+      <div class="mic">🎤</div>
+      <div class="input">Listening… tap to interrupt</div>
+    </div>
+    <div class="meta" style="margin-top:8px">Hands-free ON · transcript kept above</div>
+  </div>
+  <div class="tabbar">
+    <div class="tab">Scan</div><div class="tab">Paper</div><div class="tab">Watch</div>
+    <div class="tab">Learn</div><div class="tab on">E-ve</div><div class="tab">Settings</div>
+  </div>
+</div></div>
+
+<div class="wrap"><div class="label">7 · Settings</div>
+<div class="phone" id="settings">
+  <div class="notch">9:41</div>
+  <div class="header">Settings</div>
+  <div class="content">
+    <div class="section">Connection</div>
+    <div class="card">
+      <div class="meta">API base</div>
+      <div class="meta" style="color:#e8eef7">http://192.168.1.20:8000</div>
+    </div>
+    <div class="toggle"><div><div class="l">Paper trading</div><div class="s">Fake money (default)</div></div><div class="switch"></div></div>
+    <div class="toggle"><div><div class="l">Real-time data (Alpaca SIP)</div><div class="s">Needs paid ~$99/mo key</div></div><div class="switch off"></div></div>
+    <div class="toggle"><div><div class="l">Live Trading</div><div class="s">Locked — real money risk</div></div><div class="switch off"></div></div>
+    <div class="toggle"><div><div class="l">Hands-free E-ve</div><div class="s">Mic + speak replies</div></div><div class="switch"></div></div>
+    <div class="btn">Install on phone (show QR)</div>
+    <div class="btn ghost">Kill switch</div>
+  </div>
+  <div class="tabbar">
+    <div class="tab">Scan</div><div class="tab">Paper</div><div class="tab">Watch</div>
+    <div class="tab">Learn</div><div class="tab">E-ve</div><div class="tab on">Settings</div>
+  </div>
+</div></div>
+
+</div>
+</body>
+</html>

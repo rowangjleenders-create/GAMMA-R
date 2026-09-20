@@ -1,0 +1,3 @@
+DONE:eve_desk_brief
+verified=2026-09-20 19:05:18 UTC
+items=eve_desk_brief tool+API /desk/eve-brief; sections regime/signals/crash/scoreboard/overnight; persona E-ve; Full desk brief chip (CoPilot+ProDesk); portfolio_risk_snapshot

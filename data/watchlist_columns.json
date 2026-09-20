@@ -1,0 +1,12 @@
+{
+  "columns": [
+    "last",
+    "bid",
+    "ask",
+    "spread",
+    "pct_chg",
+    "volume",
+    "signal_score",
+    "news_tilt"
+  ]
+}

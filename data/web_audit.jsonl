@@ -1,0 +1,112 @@
+{"ts": "2026-09-20T06:53:55Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T06:53:56Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T06:53:56Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T06:53:57Z", "event": "fetch_paywall", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T06:53:58Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T06:53:59Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+brief", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T06:53:59Z", "event": "learn_write", "topic": "SPY brief", "urls": ["https://www.cnbc.com/search/?query=SPY+brief"], "ok": true}
+{"ts": "2026-09-20T06:53:59Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T06:54:00Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T06:54:00Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:00Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:00Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:00Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:00Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T06:54:01Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/markets/", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:01Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:01Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:01Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:01Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:01Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T06:54:01Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T06:54:39Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T06:54:40Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=AAPL+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T06:54:41Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=AAPL+stock+earnings+news", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T06:54:41Z", "event": "fetch_paywall", "url": "https://www.marketwatch.com/search?q=AAPL+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T06:54:42Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=AAPL+brief", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T06:54:43Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=AAPL+brief", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T06:54:43Z", "event": "learn_write", "topic": "AAPL brief", "urls": ["https://www.cnbc.com/search/?query=AAPL+brief"], "ok": true}
+{"ts": "2026-09-20T19:04:26Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:04:26Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:04:27Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:04:28Z", "event": "fetch_paywall", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:04:28Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:04:29Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+brief", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:04:29Z", "event": "learn_write", "topic": "SPY brief", "urls": ["https://www.cnbc.com/search/?query=SPY+brief"], "ok": true}
+{"ts": "2026-09-20T19:04:30Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:04:31Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:04:31Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:31Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:31Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:31Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:31Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:04:32Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/markets/", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:32Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:32Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:32Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:32Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:32Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:32Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:04:33Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/markets/", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:33Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:33Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:33Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:33Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:33Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:33Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:04:35Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/markets/", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:35Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:35Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:35Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:35Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:35Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:04:35Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:04:59Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:00Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:01Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:01Z", "event": "fetch_paywall", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:02Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:09Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+brief", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:09Z", "event": "learn_write", "topic": "SPY brief", "urls": ["https://www.cnbc.com/search/?query=SPY+brief"], "ok": true}
+{"ts": "2026-09-20T19:05:11Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:11Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:11Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:11Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:11Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:11Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:11Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:05:39Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:39Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:48Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:48Z", "event": "fetch_paywall", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:49Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:50Z", "event": "fetch_ok", "url": "https://www.cnbc.com/search/?query=SPY+brief", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:50Z", "event": "learn_write", "topic": "SPY brief", "urls": ["https://www.cnbc.com/search/?query=SPY+brief"], "ok": true}
+{"ts": "2026-09-20T19:05:51Z", "event": "fetch_ok", "url": "https://www.cnbc.com/markets/", "host": "www.cnbc.com", "ok": true, "bytes": 400000, "truncated": true, "note": null, "for_learning": false}
+{"ts": "2026-09-20T19:05:51Z", "event": "fetch_paywall", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "http_401", "ok": false}
+{"ts": "2026-09-20T19:05:51Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:51Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:51Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:51Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:51Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:05:52Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/markets/", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:52Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:52Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:52Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:52Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:52Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:52Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:05:53Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/markets/", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:53Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:53Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:53Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:53Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:53Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:53Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}
+{"ts": "2026-09-20T19:05:56Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/markets/", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:56Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:56Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:56Z", "event": "fetch_rate_limit", "url": "https://www.marketwatch.com/search?q=SPY+stock+earnings+news", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:56Z", "event": "fetch_rate_limit", "url": "https://www.reuters.com/site-search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:56Z", "event": "fetch_rate_limit", "url": "https://www.cnbc.com/search/?query=SPY+brief", "reason": "rate_limited (8/60s)", "ok": false}
+{"ts": "2026-09-20T19:05:56Z", "event": "learn_write", "topic": "SPY brief", "urls": [], "ok": true}

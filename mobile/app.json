@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "GAMMA-R",
+    "slug": "momentum-bot",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "momentum-bot",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0f14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.momentumbot.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "CFBundleDisplayName": "GAMMA-R",
+        "NSMicrophoneUsageDescription": "GAMMA-R uses the microphone for E-ve voice questions (on-device speech recognition).",
+        "NSSpeechRecognitionUsageDescription": "GAMMA-R converts your speech to text for E-ve chat using on-device recognition.",
+        "NSFaceIDUsageDescription": "GAMMA-R may use Face ID to protect API keys stored in the Keychain.",
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
+      }
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow GAMMA-R to use the microphone for E-ve voice mode.",
+          "speechRecognitionPermission": "Allow GAMMA-R to recognize speech for E-ve voice mode."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "sounds": []
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "TODO-replace-after-eas-init"
+      }
+    },
+    "android": {
+      "package": "com.momentumbot.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0b0f14"
+      },
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    }
+  }
+}

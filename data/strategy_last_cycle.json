@@ -1,0 +1,148 @@
+{
+  "at": "2026-09-20T05:49:33Z",
+  "router": {
+    "mode": "auto",
+    "regime_label": "bull",
+    "trend": "bull",
+    "vol_regime": "low",
+    "active": [
+      "momentum",
+      "breakout",
+      "relative_strength",
+      "vol_target",
+      "fx_mean_reversion"
+    ],
+    "weights": {
+      "momentum": 1.0,
+      "mean_reversion": 0.25,
+      "breakout": 0.9,
+      "relative_strength": 0.7,
+      "vol_target": 1.0,
+      "pairs": 0.3,
+      "fx_mean_reversion": 0.35,
+      "earnings_drift": 0.25
+    },
+    "size_mults": {
+      "momentum": 1.0,
+      "mean_reversion": 0.25,
+      "breakout": 0.9,
+      "relative_strength": 0.7,
+      "vol_target": 1.0,
+      "pairs": 0.3,
+      "fx_mean_reversion": 0.35,
+      "earnings_drift": 0.25
+    },
+    "reasons": {
+      "momentum": "prior for regime=bull",
+      "mean_reversion": "prior for regime=bull",
+      "breakout": "prior for regime=bull",
+      "relative_strength": "prior for regime=bull",
+      "vol_target": "prior for regime=bull",
+      "pairs": "prior for regime=bull",
+      "fx_mean_reversion": "prior for regime=bull",
+      "earnings_drift": "no earnings events this cycle \u2014 may no-op"
+    },
+    "news_tilt": 0.0,
+    "performance_tilt": {},
+    "vol_target": {
+      "multiplier": 1.5,
+      "realized_vol": 0.0016,
+      "target_vol": 0.15,
+      "raw_multiplier": 95.8855,
+      "capped": true,
+      "lookback": 20,
+      "benchmark": "SPY"
+    }
+  },
+  "fired": [
+    "fx_mean_reversion"
+  ],
+  "signal_count": 1,
+  "by_strategy": {
+    "fx_mean_reversion": 1
+  },
+  "vol_target": {
+    "multiplier": 1.5,
+    "realized_vol": 0.0016,
+    "target_vol": 0.15,
+    "raw_multiplier": 95.8855,
+    "capped": true,
+    "lookback": 20,
+    "benchmark": "SPY"
+  },
+  "enabled": {
+    "momentum": true,
+    "mean_reversion": true,
+    "breakout": true,
+    "relative_strength": true,
+    "vol_target": true,
+    "pairs": true,
+    "fx_mean_reversion": true,
+    "earnings_drift": true
+  },
+  "top": [
+    {
+      "ticker": "NZDUSD",
+      "strategy_id": "fx_mean_reversion",
+      "score": 0.239224,
+      "side": "long",
+      "rationale": "FX MR NZDUSD: RSI=17, 5d=-1.51% \u2192 paper long (informational; not live FX)",
+      "suggested_size_mult": 0.525
+    }
+  ],
+  "earnings_provider": {
+    "configured": false,
+    "env_key": null,
+    "note": "Set FINNHUB_API_KEY for a free-tier earnings calendar; without it PEAD returns no signals (safe no-op)."
+  },
+  "strategies": [
+    {
+      "id": "momentum",
+      "name": "Momentum",
+      "description": "Short-term price momentum with volume confirmation (core GAMMA-R strategy).",
+      "is_overlay": false
+    },
+    {
+      "id": "mean_reversion",
+      "name": "Mean reversion",
+      "description": "Short-term oversold / pullback entries (RSI + distance from MA).",
+      "is_overlay": false
+    },
+    {
+      "id": "breakout",
+      "name": "Breakout",
+      "description": "N-day high / range breakout confirmed by volume.",
+      "is_overlay": false
+    },
+    {
+      "id": "relative_strength",
+      "name": "Relative strength",
+      "description": "Prefer names outperforming SPY / sector proxies (rotation tilt).",
+      "is_overlay": false
+    },
+    {
+      "id": "earnings_drift",
+      "name": "Earnings drift (PEAD)",
+      "description": "Post-earnings drift tilt when a calendar is available; no-ops safely without API keys.",
+      "is_overlay": false
+    },
+    {
+      "id": "pairs",
+      "name": "Pairs / relative value",
+      "description": "Long the relatively strong twin; flag weak twin for underweight (paper).",
+      "is_overlay": false
+    },
+    {
+      "id": "fx_mean_reversion",
+      "name": "FX mean reversion",
+      "description": "Mean-reversion tilts on major FX pairs (informational / paper only).",
+      "is_overlay": false
+    },
+    {
+      "id": "vol_target",
+      "name": "Vol-target overlay",
+      "description": "Scales position size toward a target annualized volatility (not an entry signal).",
+      "is_overlay": true
+    }
+  ]
+}

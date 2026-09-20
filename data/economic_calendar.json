@@ -1,0 +1,306 @@
+{
+  "events": [
+    {
+      "id": "ism-manufacturing-pmi-w0",
+      "title": "ISM Manufacturing PMI",
+      "country": "US",
+      "impact": "high",
+      "category": "activity",
+      "when": "2026-09-14T13:00:00Z",
+      "when_ts": 1789390800,
+      "source": "curated_static"
+    },
+    {
+      "id": "uk-cpi-w0",
+      "title": "UK CPI",
+      "country": "UK",
+      "impact": "medium",
+      "category": "inflation",
+      "when": "2026-09-16T11:00:00Z",
+      "when_ts": 1789556400,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-cpi-(yoy)-w0",
+      "title": "US CPI (YoY)",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-09-16T12:30:00Z",
+      "when_ts": 1789561800,
+      "source": "curated_static"
+    },
+    {
+      "id": "fomc-rate-decision-(approx)-w0",
+      "title": "FOMC Rate Decision (approx)",
+      "country": "US",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-09-16T18:00:00Z",
+      "when_ts": 1789581600,
+      "source": "curated_static"
+    },
+    {
+      "id": "ecb-rate-decision-(approx)-w0",
+      "title": "ECB Rate Decision (approx)",
+      "country": "EU",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-09-17T12:15:00Z",
+      "when_ts": 1789647300,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-retail-sales-w0",
+      "title": "US Retail Sales",
+      "country": "US",
+      "impact": "medium",
+      "category": "growth",
+      "when": "2026-09-17T12:30:00Z",
+      "when_ts": 1789648200,
+      "source": "curated_static"
+    },
+    {
+      "id": "initial-jobless-claims-w0",
+      "title": "Initial Jobless Claims",
+      "country": "US",
+      "impact": "medium",
+      "category": "labor",
+      "when": "2026-09-17T14:00:00Z",
+      "when_ts": 1789653600,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-existing-home-sales-w0",
+      "title": "US Existing Home Sales",
+      "country": "US",
+      "impact": "low",
+      "category": "housing",
+      "when": "2026-09-18T12:30:00Z",
+      "when_ts": 1789734600,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-pce-price-index-w0",
+      "title": "US PCE Price Index",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-09-18T12:30:00Z",
+      "when_ts": 1789734600,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-nonfarm-payrolls-(approx-week)-w0",
+      "title": "US Nonfarm Payrolls (approx week)",
+      "country": "US",
+      "impact": "high",
+      "category": "labor",
+      "when": "2026-09-18T12:30:00Z",
+      "when_ts": 1789734600,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-ppi-w1",
+      "title": "US PPI",
+      "country": "US",
+      "impact": "medium",
+      "category": "inflation",
+      "when": "2026-09-22T12:30:00Z",
+      "when_ts": 1790080200,
+      "source": "curated_static"
+    },
+    {
+      "id": "uk-cpi-w1",
+      "title": "UK CPI",
+      "country": "UK",
+      "impact": "medium",
+      "category": "inflation",
+      "when": "2026-09-23T11:00:00Z",
+      "when_ts": 1790161200,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-cpi-(yoy)-w1",
+      "title": "US CPI (YoY)",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-09-23T12:30:00Z",
+      "when_ts": 1790166600,
+      "source": "curated_static"
+    },
+    {
+      "id": "fomc-rate-decision-(approx)-w1",
+      "title": "FOMC Rate Decision (approx)",
+      "country": "US",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-09-23T18:00:00Z",
+      "when_ts": 1790186400,
+      "source": "curated_static"
+    },
+    {
+      "id": "ecb-rate-decision-(approx)-w1",
+      "title": "ECB Rate Decision (approx)",
+      "country": "EU",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-09-24T12:15:00Z",
+      "when_ts": 1790252100,
+      "source": "curated_static"
+    },
+    {
+      "id": "initial-jobless-claims-w1",
+      "title": "Initial Jobless Claims",
+      "country": "US",
+      "impact": "medium",
+      "category": "labor",
+      "when": "2026-09-24T14:00:00Z",
+      "when_ts": 1790258400,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-pce-price-index-w1",
+      "title": "US PCE Price Index",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-09-25T12:30:00Z",
+      "when_ts": 1790339400,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-nonfarm-payrolls-(approx-week)-w1",
+      "title": "US Nonfarm Payrolls (approx week)",
+      "country": "US",
+      "impact": "high",
+      "category": "labor",
+      "when": "2026-09-25T12:30:00Z",
+      "when_ts": 1790339400,
+      "source": "curated_static"
+    },
+    {
+      "id": "ism-manufacturing-pmi-w2",
+      "title": "ISM Manufacturing PMI",
+      "country": "US",
+      "impact": "high",
+      "category": "activity",
+      "when": "2026-09-28T13:00:00Z",
+      "when_ts": 1790600400,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-cpi-(yoy)-w2",
+      "title": "US CPI (YoY)",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-09-30T12:30:00Z",
+      "when_ts": 1790771400,
+      "source": "curated_static"
+    },
+    {
+      "id": "fomc-rate-decision-(approx)-w2",
+      "title": "FOMC Rate Decision (approx)",
+      "country": "US",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-09-30T18:00:00Z",
+      "when_ts": 1790791200,
+      "source": "curated_static"
+    },
+    {
+      "id": "ecb-rate-decision-(approx)-w2",
+      "title": "ECB Rate Decision (approx)",
+      "country": "EU",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-10-01T12:15:00Z",
+      "when_ts": 1790856900,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-pce-price-index-w2",
+      "title": "US PCE Price Index",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-10-02T12:30:00Z",
+      "when_ts": 1790944200,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-nonfarm-payrolls-(approx-week)-w2",
+      "title": "US Nonfarm Payrolls (approx week)",
+      "country": "US",
+      "impact": "high",
+      "category": "labor",
+      "when": "2026-10-02T12:30:00Z",
+      "when_ts": 1790944200,
+      "source": "curated_static"
+    },
+    {
+      "id": "ism-manufacturing-pmi-w3",
+      "title": "ISM Manufacturing PMI",
+      "country": "US",
+      "impact": "high",
+      "category": "activity",
+      "when": "2026-10-05T13:00:00Z",
+      "when_ts": 1791205200,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-cpi-(yoy)-w3",
+      "title": "US CPI (YoY)",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-10-07T12:30:00Z",
+      "when_ts": 1791376200,
+      "source": "curated_static"
+    },
+    {
+      "id": "fomc-rate-decision-(approx)-w3",
+      "title": "FOMC Rate Decision (approx)",
+      "country": "US",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-10-07T18:00:00Z",
+      "when_ts": 1791396000,
+      "source": "curated_static"
+    },
+    {
+      "id": "ecb-rate-decision-(approx)-w3",
+      "title": "ECB Rate Decision (approx)",
+      "country": "EU",
+      "impact": "high",
+      "category": "rates",
+      "when": "2026-10-08T12:15:00Z",
+      "when_ts": 1791461700,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-pce-price-index-w3",
+      "title": "US PCE Price Index",
+      "country": "US",
+      "impact": "high",
+      "category": "inflation",
+      "when": "2026-10-09T12:30:00Z",
+      "when_ts": 1791549000,
+      "source": "curated_static"
+    },
+    {
+      "id": "us-nonfarm-payrolls-(approx-week)-w3",
+      "title": "US Nonfarm Payrolls (approx week)",
+      "country": "US",
+      "impact": "high",
+      "category": "labor",
+      "when": "2026-10-09T12:30:00Z",
+      "when_ts": 1791549000,
+      "source": "curated_static"
+    }
+  ],
+  "source": "curated_static",
+  "refreshed_at": "2026-09-20T06:46:49Z"
+}

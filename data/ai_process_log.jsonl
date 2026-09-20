@@ -1,0 +1,159 @@
+{"ts": "2026-09-20T06:35:14Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:35:25Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:36:20Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:36:22Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:36:25Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:36:53Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "options_research"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:36:53Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:37:11Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:37:11Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:37:11Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:37:12Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:37:13Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:37:13Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:37:15Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:37:16Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:37:16Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:40:29Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:40:29Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:40:29Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:40:31Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:40:31Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:40:31Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:40:31Z", "event": "overnight_ingest", "detail": {"note_count": 0, "topics": [], "reason": "smoke"}}
+{"ts": "2026-09-20T06:40:32Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:40:33Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:40:33Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:40:34Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:40:35Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:40:37Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:40:37Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:40:37Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:40:39Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:40:39Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:41:15Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "options_research", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:16Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:41:17Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "options_research", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:18Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:41:18Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:41:18Z", "event": "overnight_ingest", "detail": {"note_count": 0, "topics": [], "reason": "verify"}}
+{"ts": "2026-09-20T06:41:43Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:41:43Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:43Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:41:45Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:45Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:41:45Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:41:45Z", "event": "overnight_ingest", "detail": {"note_count": 0, "topics": [], "reason": "smoke"}}
+{"ts": "2026-09-20T06:41:46Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:41:47Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:47Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:41:48Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:49Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:41:51Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:41:51Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:51Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:41:53Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:41:53Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:42:18Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "options_research", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:19Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:42:20Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "options_research", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:21Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:42:22Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:42:23Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "options_research", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:24Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:42:24Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "options_research", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:33Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:42:34Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:34Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:42:35Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:36Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:42:36Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:42:36Z", "event": "overnight_ingest", "detail": {"note_count": 0, "topics": [], "reason": "smoke"}}
+{"ts": "2026-09-20T06:42:36Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:42:37Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:37Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:42:38Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:39Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:42:41Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:42:41Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:41Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:42:42Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:42:43Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:46:41Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:46:42Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:46:42Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:46:43Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:46:44Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:46:44Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:46:44Z", "event": "overnight_ingest", "detail": {"note_count": 0, "topics": [], "reason": "smoke"}}
+{"ts": "2026-09-20T06:46:45Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:46:46Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:46:46Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:46:47Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:46:47Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:46:52Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:46:53Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:46:53Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:46:54Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:46:54Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:47:38Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:47:38Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:47:38Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:47:39Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:47:40Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:47:40Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:47:40Z", "event": "overnight_ingest", "detail": {"note_count": 0, "topics": [], "reason": "smoke"}}
+{"ts": "2026-09-20T06:47:41Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:47:41Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:47:41Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:47:43Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:47:43Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:47:49Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:47:49Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:47:49Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:47:51Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:47:51Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:48:08Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:48:09Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:48:09Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:48:10Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:48:10Z", "event": "daily_self_critique", "detail": {"active": 8, "degraded": 1, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:48:10Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:48:10Z", "event": "overnight_ingest", "detail": {"note_count": 0, "topics": [], "reason": "smoke"}}
+{"ts": "2026-09-20T06:48:11Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:48:12Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:48:12Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:48:13Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:48:14Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:48:19Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "audit", "leaderboard", "scoreboard"], "degraded_count": 2, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:48:19Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:48:19Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:48:21Z", "event": "propose_next_improvements", "detail": {"top": ["enable_nbbo", "schedule_web", "import_external", "hard_l2"], "feed": {"badge": "Delayed", "degraded": true}}}
+{"ts": "2026-09-20T06:48:21Z", "event": "daily_self_critique", "detail": {"active": 7, "degraded": 2, "feed": "Delayed", "top_actions": ["Enable Alpaca keys for NBBO/SIP|IEX top-of-book", "Enable auto_web_learn_enabled or POST /auto/web-learn/run", "Enable Alpaca keys / SIP|IEX for NBBO top-of-book"]}}
+{"ts": "2026-09-20T06:53:45Z", "event": "overnight_research", "detail": {"count": 0}}
+{"ts": "2026-09-20T06:53:59Z", "event": "overnight_research", "detail": {"count": 1}}
+{"ts": "2026-09-20T06:54:00Z", "event": "overnight_research", "detail": {"count": 2}}
+{"ts": "2026-09-20T06:54:01Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T06:54:01Z", "event": "overnight_research", "detail": {"count": 2}}
+{"ts": "2026-09-20T06:54:20Z", "event": "overnight_research", "detail": {"count": 3}}
+{"ts": "2026-09-20T06:54:29Z", "event": "overnight_research", "detail": {"count": 3}}
+{"ts": "2026-09-20T19:03:05Z", "event": "overnight_research", "detail": {"count": 4}}
+{"ts": "2026-09-20T19:04:13Z", "event": "overnight_research", "detail": {"count": 4}}
+{"ts": "2026-09-20T19:04:29Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:04:31Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:04:32Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:04:33Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:04:35Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T19:04:35Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:04:37Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:04:43Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:04:58Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:10Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:27Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:50Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:51Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:52Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:53Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:56Z", "event": "edge_report", "detail": {"active": ["router", "firewall", "crash", "external", "web", "audit", "leaderboard", "scoreboard"], "degraded_count": 1, "feed": "Delayed"}}
+{"ts": "2026-09-20T19:05:56Z", "event": "overnight_research", "detail": {"count": 5}}
+{"ts": "2026-09-20T19:05:57Z", "event": "overnight_research", "detail": {"count": 5}}

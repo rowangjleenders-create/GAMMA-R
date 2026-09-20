@@ -1,0 +1,19 @@
+{
+  "last_crash_alert_at": null,
+  "last_heat_alert_at": "2026-09-20T06:35:17Z",
+  "last_cut_alert_at": null,
+  "last_firewall_alert_at": null,
+  "last_fired": [
+    {
+      "ts": "2026-09-20T06:35:17Z",
+      "kind": "intraday_heat",
+      "title": "Intraday heat spike",
+      "body": "AMD: score=8.06 \u2014 ",
+      "extra": {
+        "ticker": "AMD",
+        "score": 8.059
+      }
+    }
+  ],
+  "updated_at": "2026-09-20T06:48:09Z"
+}
